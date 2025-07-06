@@ -1,0 +1,128 @@
+/* ======= Gradient Background Style ======= */
+body {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #b8d7f7 0%, #ffe1d0 100%);
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* ======= Navbar Styling ======= */
+.navbar-blur {
+  background: rgba(255,255,255,0.6) !important;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 16px 0 rgba(80,80,80,0.08);
+  border: none;
+}
+
+.nav-link-custom {
+  color: #222 !important;
+  font-weight: 500;
+  padding: 0 1.1em !important;
+  font-size: 1.08rem;
+  transition: color 0.25s;
+}
+.nav-link-custom:hover, .nav-link-custom:focus {
+  color: #000 !important;
+}
+
+/* ======= Logo Icon (Custom Double Circle) ======= */
+.logo-icon {
+  display: inline-block;
+  width: 34px; height: 34px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2.5px solid #222;
+  position: relative;
+}
+.logo-icon::before, .logo-icon::after {
+  content: '';
+  position: absolute;
+  top: 8px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: #222;
+}
+.logo-icon::before { left: 5px; }
+.logo-icon::after { right: 5px; }
+
+/* ======= Hero Section Styles ======= */
+.hero-section {
+  text-align: center;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+/* Main Name Styling */
+.hero-title {
+  font-size: 2.8rem;
+  letter-spacing: -2px;
+}
+
+/* Badge Shadow */
+.badge-shadow {
+  box-shadow: 0 1px 6px 0 rgba(80,80,80,0.07);
+}
+
+/* Hero Description */
+.hero-desc {
+  color: #333;
+  font-size: 1.13rem;
+}
+
+/* CTA Button */
+.cta-btn {
+  border-radius: 30px;
+  font-weight: 600;
+  box-shadow: 0 2px 12px 0 rgba(80,80,80,0.07);
+  transition: background 0.2s;
+}
+.cta-btn:hover, .cta-btn:focus {
+  background: #333 !important;
+}
+
+/* Contact Button */
+.contact-btn {
+  background: linear-gradient(90deg, #222, #444);
+}
+
+/* ======= Hero Image Styling ======= */
+.hero-img-wrapper {
+  margin-top: 1.5rem;
+  background: #fff;
+  border-radius: 22px;
+  padding: 1.5rem;
+  display: inline-block;
+  box-shadow: 0 6px 32px 0 rgba(80,80,80,0.13);
+}
+.hero-img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 18px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ======= Responsive Adjustments ======= */
+@media (max-width: 700px) {
+  .navbar-blur {
+    max-width: 99vw;
+    padding-left: 7px !important;
+    padding-right: 7px !important;
+  }
+  .hero-section {
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+  }
+  .hero-img-wrapper {
+    padding: 0.5rem;
+  }
+  .hero-title {
+    font-size: 2.2rem;
+  }
+}
+
+/* Extra: Remove link outlines on click */
+a, button {
+  outline: none !important;
+  box-shadow: none !important;
+}
