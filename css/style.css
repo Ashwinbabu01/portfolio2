@@ -3,7 +3,11 @@
   font-family: 'RoadRage';
   src: url('fonts/Road_Rage.otf') format('opentype');
 }
-
+.roadrage-text{
+  font-family: 'RoadRage', sans-serif;
+  font-size: 32px;
+  color: #333;
+}
 
 /* ======= Gradient Background Style ======= */
 body {
