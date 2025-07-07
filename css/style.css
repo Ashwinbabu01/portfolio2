@@ -1,7 +1,7 @@
 /* ======= Gradient Background Style ======= */
 body {
   min-height: 100vh;
-  background: linear-gradient(180deg, #b8d7f7 0%, #ffe1d0 100%);
+  background: linear-gradient(180deg, #2596be 0%, #ffe1d0 100%);
   font-family: 'Segoe UI', Arial, sans-serif;
 }
 
