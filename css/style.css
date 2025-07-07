@@ -1,3 +1,10 @@
+/* local font access karne ke liye */
+@font-face {
+  font-family: 'RoadRage';
+  src: url('fonts/Road_Rage.otf') format('opentype');
+}
+
+
 /* ======= Gradient Background Style ======= */
 body {
   min-height: 100vh;
